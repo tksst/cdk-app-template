@@ -2,9 +2,9 @@ import { main } from "./main.js";
 
 describe("main()", () => {
     it("print message", () => {
-        let consoleMessage: any;
+        let consoleMessage: unknown;
 
-        const log = jest.spyOn(console, "log").mockImplementation((message: any) => {
+        const log = jest.spyOn(console, "log").mockImplementation((message: unknown) => {
             consoleMessage = message;
         });
         main();
