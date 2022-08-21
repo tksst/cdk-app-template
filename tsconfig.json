@@ -1,0 +1,4 @@
+{
+  "extends": "@tksst/typescript-starter/tsconfig.json",
+  "include": ["src"]
+}
