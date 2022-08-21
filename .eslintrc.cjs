@@ -21,4 +21,7 @@ module.exports = {
         sourceType: "module",
     },
     extends: "@tksst",
+    rules: {
+        "no-new": "off",
+    },
 };
