@@ -15,15 +15,6 @@ A template project for javascript library (for browsers or Node.js) and/or execu
 
 (if modifiable) Code fixes by ESLint and Prettier
 
-### `pnpm build`
-
-- Build library entry points for both ESM and CJS by [tsup](https://tsup.egoist.sh/)
-- Build an executable that runs in ESM mode by tsup
-
-### `pnpm watch`
-
-Watching mode of `build`
-
 ### `pnpm test`
 
 Testing by [Jest](https://jestjs.io/)
