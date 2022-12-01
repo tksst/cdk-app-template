@@ -17,6 +17,7 @@
     "lint:eslint": "eslint --color --cache --cache-strategy content --cache-location ./node_modules/.cache/eslint/ --ext .js,.cjs,.mjs,.ts,.cts,.mts .",
     "lint:secretlint": "secretlint --maskSecrets **",
     "lint:tsc": "tsc --noEmit",
+    "lint:cdksynth": "cdk synthesize --quiet",
     "test": "run-s test:*",
     "test:unit": "jest --ci"
   },
