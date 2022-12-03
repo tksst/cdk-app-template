@@ -13,7 +13,7 @@ on:
 jobs:
   build-test:
     name: Lint and Test
-    uses: tksst/github-actions-workflows/.github/workflows/nodejs-pnpm.yml@60c5a837e7d460d37847306dd77c8df8ab7d06c6
+    uses: tksst/github-actions-workflows/.github/workflows/nodejs-pnpm.yml@14553fc8b894ed94edaea724ca6b11f13312e850
     with:
       build: false
       os: '["ubuntu-latest"]'
