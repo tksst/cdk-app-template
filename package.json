@@ -12,23 +12,7 @@
     "url": "https://www.tks.st/"
   },
   "type": "module",
-  "exports": {
-    "import": "./dist/lib/index.js",
-    "require": "./dist/lib/index.cjs"
-  },
-  "types": "./dist/lib/index.d.ts",
-  "bin": {
-    "typescript-node-starter": "./dist/bin/index.js"
-  },
   "scripts": {
-    "clean": "tss-rmrf ./dist/",
-    "build": "run-s --continue-on-error clean build:*",
-    "build:lib": "tsup --config ./tsup.config.lib.js",
-    "build:bin": "tsup --config ./tsup.config.bin.js",
-    "prepack": "pnpm build",
-    "watch": "npm-run-all clean --parallel --continue-on-error --print-label watch:*",
-    "watch:lib": "pnpm build:lib --watch",
-    "watch:bin": "pnpm build:bin --watch",
     "fix": "run-s --continue-on-error fix:*",
     "fix:prettier": "pnpm lint:prettier --write",
     "fix:eslint": "pnpm lint:eslint --fix",
@@ -48,8 +32,10 @@
     "@tksst/prettier-config": "1.1.0",
     "@tksst/typescript-starter-configs": "1.0.0",
     "@types/jest": "29.2.3",
+    "@types/node": "18.11.10",
     "@typescript-eslint/eslint-plugin": "5.45.0",
     "@typescript-eslint/parser": "5.45.0",
+    "aws-cdk": "2.53.0",
     "better-typescript-lib": "2.1.0",
     "eslint": "8.29.0",
     "eslint-plugin-jest": "27.1.6",
@@ -58,14 +44,12 @@
     "npm-run-all": "4.1.5",
     "prettier": "2.8.0",
     "secretlint": "5.3.0",
-    "tsup": "6.5.0",
     "typescript": "4.9.3"
   },
   "dependencies": {
+    "aws-cdk-lib": "2.53.0",
+    "constructs": "10.1.179",
     "source-map-support": "0.5.21"
   },
-  "packageManager": "pnpm@7.18.0",
-  "engines": {
-    "node": ">= 14"
-  }
+  "packageManager": "pnpm@7.18.0"
 }
