@@ -10,6 +10,7 @@ Just run cdk command
 
 ### `pnpm lint`
 
+- Check if `cdk synth` succeeds
 - Static analysis of code with [ESLint](https://eslint.org/)
 - Code format checking with [Prettier](https://prettier.io)
 - Type checking of TypeScript with [tsc](https://www.typescriptlang.org/docs/handbook/compiler-options.html)
