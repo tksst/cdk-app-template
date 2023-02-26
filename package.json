@@ -17,6 +17,7 @@
     "lint:eslint": "eslint --color .",
     "lint:secretlint": "secretlint --maskSecrets **",
     "lint:tsc": "tsc --noEmit",
+    "lint:cdksynth": "cdk synthesize --quiet",
     "test": "run-s test:*",
     "test:unit": "jest --ci"
   },
