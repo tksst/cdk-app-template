@@ -8,4 +8,8 @@ x.push({
     },
 });
 
+x.push({
+    ignores: ["cdk.out/**"],
+});
+
 module.exports = x;
