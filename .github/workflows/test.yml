@@ -1,4 +1,4 @@
-name: Build and Test
+name: Test
 
 on:
   workflow_call:
@@ -12,5 +12,8 @@ on:
 
 jobs:
   build-test:
-    name: Build, Lint and Test
+    name: Lint and Test
     uses: tksst/github-actions-workflows/.github/workflows/nodejs-pnpm.yml@6495ac6b96f806e689d068ea293b2e820dd14104
+    with:
+      build: false
+      os: '["ubuntu-latest"]'
