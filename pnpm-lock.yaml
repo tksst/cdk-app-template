@@ -10,7 +10,7 @@ specifiers:
   '@types/jest': 29.4.0
   '@types/node': 18.14.1
   aws-cdk: 2.66.1
-  aws-cdk-lib: 2.66.1
+  aws-cdk-lib: 2.80.0
   better-typescript-lib: 2.2.1
   constructs: 10.1.261
   eslint: 8.34.0
@@ -23,7 +23,7 @@ specifiers:
   typescript: 4.9.5
 
 dependencies:
-  aws-cdk-lib: 2.66.1_constructs@10.1.261
+  aws-cdk-lib: 2.80.0_constructs@10.1.261
   constructs: 10.1.261
   source-map-support: 0.5.21
 
@@ -56,16 +56,16 @@ packages:
       '@jridgewell/trace-mapping': 0.3.17
     dev: true
 
-  /@aws-cdk/asset-awscli-v1/2.2.82:
-    resolution: {integrity: sha512-ArDgC0LaZuSf1pHCPgyvfsy/i0X2giKjooyj6VMWJCTPtl1cnjaaKqdPeji2HQHUTLFhX/IoPh/zui6bRym80g==}
+  /@aws-cdk/asset-awscli-v1/2.2.196:
+    resolution: {integrity: sha512-F8hU1rEzYS7z5Dt2s+ttd0/jMvPuUE9BcXexgq+dIOLuZsRpDwNnkMBtjNaJXJS48ZGJ2X4b8VlklseepdtoSA==}
     dev: false
 
   /@aws-cdk/asset-kubectl-v20/2.1.1:
     resolution: {integrity: sha512-U1ntiX8XiMRRRH5J1IdC+1t5CE89015cwyt5U63Cpk0GnMlN5+h9WsWMlKlPXZR4rdq/m806JRlBMRpBUB2Dhw==}
     dev: false
 
-  /@aws-cdk/asset-node-proxy-agent-v5/2.0.68:
-    resolution: {integrity: sha512-yYR0ekc3kqRiuhvfiPpYuhRCAAoydzrfZah+ZbHbfZi9H1+fFOzWYeGnbasAjq2gKpLLGO8v93lkYKU0M0xEZQ==}
+  /@aws-cdk/asset-node-proxy-agent-v5/2.0.165:
+    resolution: {integrity: sha512-bsyLQD/vqXQcc9RDmlM1XqiFNO/yewgVFXmkMcQkndJbmE/jgYkzewwYGrBlfL725hGLQipXq19+jwWwdsXQqg==}
     dev: false
 
   /@azu/format-text/1.0.2:
@@ -1908,15 +1908,15 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /aws-cdk-lib/2.66.1_constructs@10.1.261:
-    resolution: {integrity: sha512-xMnKXOnsoJLoDyl6L3BUYLPa9bqw8UoBlFGGH4gbzpBPViv9b49xvYuW+BLf7bK7IVgTzYQ+VmZKaFsj+VFouA==}
+  /aws-cdk-lib/2.80.0_constructs@10.1.261:
+    resolution: {integrity: sha512-PoqD3Yms5I0ajuTi071nTW/hpkH3XsdyZzn5gYsPv0qD7mqP3h6Qr+6RiGx+yQ1KcVFyxWdX15uK+DsC0KwvcQ==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
       constructs: ^10.0.0
     dependencies:
-      '@aws-cdk/asset-awscli-v1': 2.2.82
+      '@aws-cdk/asset-awscli-v1': 2.2.196
       '@aws-cdk/asset-kubectl-v20': 2.1.1
-      '@aws-cdk/asset-node-proxy-agent-v5': 2.0.68
+      '@aws-cdk/asset-node-proxy-agent-v5': 2.0.165
       constructs: 10.1.261
     dev: false
     bundledDependencies:
@@ -1928,6 +1928,7 @@ packages:
       - minimatch
       - punycode
       - semver
+      - table
       - yaml
 
   /aws-cdk/2.66.1:
